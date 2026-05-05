@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "walnut67"
+version = "0.1.0"
+description = "Substitution cipher for backdoor languages for ML"
+readme = "README.md"
+requires-python = ">=3.14"
+authors = [{ name = "Seth Barrett" }]
+license = "Unlicense"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "deptry>=0.25.1",
+    "pytest>=9.0.3",
+    "ruff>=0.15.12",
+    "twine>=6.2.0",
+]
+
+[project.scripts]
+latex-wc = "walnut67.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+license-files = ["LICENSE"]
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.deptry]
+root = ["src"]
+
+[tool.deptry.per_rule_ignores]
+DEP003 = ["walnut67"]
