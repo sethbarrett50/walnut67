@@ -1,4 +1,4 @@
-from constants import wal_67
+from .constants import wal_67
 
 
 def main():
