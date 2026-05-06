@@ -1,10 +1,10 @@
 [build-system]
-requires = ["setuptools>=69", "wheel"]
+requires = ["setuptools>=82.0.1", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "walnut67"
-version = "0.1.1"
+version = "0.1.2"
 description = "Substitution cipher for backdoor languages for ML"
 readme = "README.md"
 requires-python = ">=3.14"
